@@ -31,7 +31,7 @@ $year = date('Y');
                 <a href="#layanan">Layanan</a>
                 <a href="#tentang">Tentang Kami</a>
             </nav>
-            <button class="cart-button" type="button" aria-label="Keranjang belanja">
+            <button class="cart-button" type="button" aria-label="Buka keranjang belanja" aria-haspopup="dialog">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L21 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
                 <span>Keranjang</span><span class="cart-count">0</span>
             </button>
@@ -86,7 +86,7 @@ $year = date('Y');
                     <button class="filter-button" type="button" data-filter="es-krim" aria-pressed="false">Es krim</button>
                 </div>
                 <div class="product-grid">
-                    <article class="product-card" data-category="roti">
+                    <article class="product-card" data-category="roti" data-product-id="roti-telur-klasik" data-price="">
                         <div class="product-image">
                             <img src="assets/images/roti-isi.jpg" alt="Contoh roti lapis telur hangat" loading="lazy">
                             <span class="product-tag">ROTI ISI TELUR</span>
@@ -94,10 +94,10 @@ $year = date('Y');
                         <div class="product-info">
                             <div class="product-title-row"><h3>Roti Telur Klasik</h3><span class="product-number">01</span></div>
                             <p>Roti lembut dengan isian telur gurih untuk memulai hari dengan senyum.</p>
-                            <div class="product-bottom"><span class="price-placeholder">Harga belum tersedia</span><button class="add-button" type="button" aria-label="Tambah Roti Telur Klasik ke keranjang">+</button></div>
+                            <div class="product-bottom"><span class="price-placeholder">Harga belum tersedia</span><div class="product-actions"><button class="add-button" type="button" aria-label="Tambah Roti Telur Klasik ke keranjang">+</button><button class="order-button" type="button">Pesan Sekarang</button></div></div>
                         </div>
                     </article>
-                    <article class="product-card" data-category="roti">
+                    <article class="product-card" data-category="roti" data-product-id="roti-telur-spesial" data-price="">
                         <div class="product-image">
                             <img src="assets/images/roti-isi.jpg" alt="Contoh roti lapis isi telur dan keju" loading="lazy">
                             <span class="product-tag">ROTI ISI TELUR</span>
@@ -105,10 +105,10 @@ $year = date('Y');
                         <div class="product-info">
                             <div class="product-title-row"><h3>Roti Telur Spesial</h3><span class="product-number">02</span></div>
                             <p>Contoh varian roti isi telur dengan tambahan yang bisa kamu tentukan.</p>
-                            <div class="product-bottom"><span class="price-placeholder">Harga belum tersedia</span><button class="add-button" type="button" aria-label="Tambah Roti Telur Spesial ke keranjang">+</button></div>
+                            <div class="product-bottom"><span class="price-placeholder">Harga belum tersedia</span><div class="product-actions"><button class="add-button" type="button" aria-label="Tambah Roti Telur Spesial ke keranjang">+</button><button class="order-button" type="button">Pesan Sekarang</button></div></div>
                         </div>
                     </article>
-                    <article class="product-card" data-category="es-krim">
+                    <article class="product-card" data-category="es-krim" data-product-id="es-krim-ceria" data-price="">
                         <div class="product-image">
                             <img src="assets/images/es-krim.jpg" alt="Es krim cone warna-warni yang dipegang" loading="lazy">
                             <span class="product-tag">ES KRIM</span>
@@ -116,10 +116,10 @@ $year = date('Y');
                         <div class="product-info">
                             <div class="product-title-row"><h3>Es Krim Ceria</h3><span class="product-number">03</span></div>
                             <p>Manis, dingin, dan menyenangkan—pilihan rasa dapat disesuaikan.</p>
-                            <div class="product-bottom"><span class="price-placeholder">Harga belum tersedia</span><button class="add-button" type="button" aria-label="Tambah Es Krim Ceria ke keranjang">+</button></div>
+                            <div class="product-bottom"><span class="price-placeholder">Harga belum tersedia</span><div class="product-actions"><button class="add-button" type="button" aria-label="Tambah Es Krim Ceria ke keranjang">+</button><button class="order-button" type="button">Pesan Sekarang</button></div></div>
                         </div>
                     </article>
-                    <article class="product-card" data-category="es-krim">
+                    <article class="product-card" data-category="es-krim" data-product-id="es-krim-favorit" data-price="">
                         <div class="product-image">
                             <img src="assets/images/es-krim.jpg" alt="Es krim cone untuk dinikmati kapan saja" loading="lazy">
                             <span class="product-tag">ES KRIM</span>
@@ -127,7 +127,7 @@ $year = date('Y');
                         <div class="product-info">
                             <div class="product-title-row"><h3>Es Krim Favorit</h3><span class="product-number">04</span></div>
                             <p>Contoh menu es krim; nama varian dan sajian final bisa kamu ubah.</p>
-                            <div class="product-bottom"><span class="price-placeholder">Harga belum tersedia</span><button class="add-button" type="button" aria-label="Tambah Es Krim Favorit ke keranjang">+</button></div>
+                            <div class="product-bottom"><span class="price-placeholder">Harga belum tersedia</span><div class="product-actions"><button class="add-button" type="button" aria-label="Tambah Es Krim Favorit ke keranjang">+</button><button class="order-button" type="button">Pesan Sekarang</button></div></div>
                         </div>
                     </article>
                 </div>
@@ -150,8 +150,8 @@ $year = date('Y');
                     <p class="eyebrow"><span></span> GAMPANG BANGET</p>
                     <h2>Enak itu<br>nggak perlu <em>ribet.</em></h2>
                     <p class="section-intro">Informasi pemesanan berikut adalah gambaran awal. Detail layanan akan diperbarui sesuai operasional Robinco.</p>
-                    <a class="button button-primary contact-button" href="https://wa.me/62XXXXXXXXXXX" target="_blank" rel="noopener noreferrer">Hubungi Robinco <span aria-hidden="true">↗</span></a>
-                    <p class="placeholder-note">Nomor WhatsApp masih berupa placeholder dan belum aktif.</p>
+                    <a class="button button-primary contact-button" href="https://wa.me/6285762779405" target="_blank" rel="noopener noreferrer">Hubungi Robinco <span aria-hidden="true">↗</span></a>
+                    <p class="placeholder-note">WhatsApp: 085762779405</p>
                 </div>
                 <div class="service-steps">
                     <article class="step-card"><span class="step-number">01</span><div><h3>Pilih yang kamu suka</h3><p>Lihat contoh pilihan roti isi telur dan es krim di katalog.</p></div><span class="step-arrow" aria-hidden="true">↗</span></article>
@@ -189,12 +189,27 @@ $year = date('Y');
                 <p>Teman hangat dan manis untuk hari-harimu.</p>
             </div>
             <div class="footer-column"><h3>Jelajahi</h3><a href="#home">Home</a><a href="#produk">Product</a><a href="#layanan">Layanan</a><a href="#tentang">Tentang Kami</a></div>
-            <div class="footer-column"><h3>Hubungi</h3><span>WhatsApp: nomor belum tersedia</span><span>Alamat: belum tersedia</span><a href="#layanan">Tanyakan informasi</a></div>
+            <div class="footer-column"><h3>Hubungi</h3><a href="https://wa.me/6285762779405" target="_blank" rel="noopener noreferrer">WhatsApp: 085762779405</a><span>Alamat: belum tersedia</span><a href="#layanan">Tanyakan informasi</a></div>
             <div class="footer-column"><h3>Ikuti cerita kami</h3><a href="#layanan">Instagram: @username</a><a href="#layanan">Media sosial: segera hadir</a></div>
         </div>
         <div class="container footer-bottom"><span>© <?= htmlspecialchars((string) $year, ENT_QUOTES, 'UTF-8') ?> ROBINCO. Dibuat dengan sepenuh hati.</span><a href="#home">Kembali ke atas ↑</a></div>
     </footer>
 
+    <dialog class="cart-dialog" aria-labelledby="cart-title">
+        <div class="cart-panel">
+            <div class="cart-header">
+                <div><p class="eyebrow"><span></span> PESANANMU</p><h2 id="cart-title">Keranjang belanja</h2></div>
+                <button class="cart-close" type="button" aria-label="Tutup keranjang">×</button>
+            </div>
+            <div class="cart-items" aria-live="polite"></div>
+            <p class="cart-empty">Keranjang masih kosong. Yuk, pilih menu favoritmu.</p>
+            <div class="cart-summary">
+                <div class="cart-total-row"><span>Total pesanan</span><strong class="cart-total-value">Rp 0</strong></div>
+                <p class="cart-price-note">Harga menu belum tersedia. Konfirmasi harga terlebih dahulu sebelum memesan.</p>
+            </div>
+            <button class="button button-primary checkout-button" type="button">Pesan melalui WhatsApp <span aria-hidden="true">↗</span></button>
+        </div>
+    </dialog>
     <div class="toast" role="status" aria-live="polite"></div>
     <script src="assets/js/main.js"></script>
 </body>
